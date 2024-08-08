@@ -24,4 +24,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/BeverlyCode/TempleDriver.git
-        commit: 153b3ef5721ad8dff4e18e3be45b18d271322089
+        commit: b44a8dcd2bc55da61689889e958efc3fbf2df697
