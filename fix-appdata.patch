@@ -1,0 +1,44 @@
+From 6ea5a761ca061b2082bbfef21c655654251927c2 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Wed, 22 Apr 2026 13:51:11 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ flat/templedriver.appdata.xml | 13 ++++++++++---
+ 1 file changed, 10 insertions(+), 3 deletions(-)
+
+diff --git a/flat/templedriver.appdata.xml b/flat/templedriver.appdata.xml
+index 1c40da5..866e16d 100644
+--- a/flat/templedriver.appdata.xml
++++ b/flat/templedriver.appdata.xml
+@@ -3,7 +3,9 @@
+ 	<id>com.voxdsp.TempleDriver</id>
+ 	<metadata_license>CC-BY-4.0</metadata_license>
+ 	<project_license>MIT</project_license>
+-	<developer_name>James William Fletcher</developer_name>
++  <developer id="com.voxdsp">
++    <name>James William Fletcher</name>
++  </developer>
+ 	<launchable type="desktop-id">com.voxdsp.TempleDriver.desktop</launchable>
+ 	<name>Temple Driver</name>
+ 	<summary>Terry's 1st Temple</summary>
+@@ -22,8 +24,13 @@
+ 		</screenshot>
+ 	</screenshots>
+ 	<url type="homepage">https://github.com/mrbid/TempleDriver</url>
+-	<releases>
++	<url type="bugtracker">https://github.com/mrbid/TempleDriver/issues</url>
++	<url type="vcs-browser">https://github.com/mrbid/TempleDriver</url>
++<releases>
+ 		<release version="1.1.1" date="2024-06-08" />
+ 	</releases>
+-	<content_rating type="oars-1.0" />
++  <content_rating type="oars-1.1">
++    <content_attribute id="violence-cartoon">moderate</content_attribute>
++    <content_attribute id="violence-fantasy">moderate</content_attribute>
++  </content_rating>
+ </component>
+--
+libgit2 1.7.2
+

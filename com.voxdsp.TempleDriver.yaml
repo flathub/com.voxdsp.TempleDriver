@@ -1,6 +1,6 @@
 app-id: com.voxdsp.TempleDriver
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: templedriver
 rename-icon: templedriver
@@ -25,3 +25,5 @@ modules:
       - type: git
         url: https://github.com/BeverlyCode/TempleDriver.git
         commit: b44a8dcd2bc55da61689889e958efc3fbf2df697
+      - type: patch
+        path: fix-appdata.patch
